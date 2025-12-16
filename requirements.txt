@@ -1,0 +1,12 @@
+streamlit
+pandas
+python-barcode
+pillow
+pyzbar
+numpy
+qrcode
+uuid
+openpyxl # Untuk ekspor ke Excel
+plotly # Untuk Grafik Interaktif
+shutil # Untuk backup
+zipfile # Untuk kompresi
