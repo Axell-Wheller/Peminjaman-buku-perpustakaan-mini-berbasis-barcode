@@ -37,14 +37,22 @@ Plaintext
 │─ app.py           
 │─ utils.py
 
-│─ data/
-│   
-├── master.csv
-│   
-└── log.csv 
-  
 │─ qr/
 
+│─ data/
+│   
+│
+├── master.csv
+
+│ ├── log.csv 
+
+│ ├──backup/
+
+│ └──laporan/
+
+  
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 📸 Screenshot Aplikasi
 <img width="1919" height="983" alt="image" src="https://github.com/user-attachments/assets/926a18b3-1ea6-4437-8722-6a5ea7d5e80d" />
