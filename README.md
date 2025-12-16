@@ -1,6 +1,7 @@
 📚 Sistem Perpustakaan Mini - Barcode Dinamis (Offline)
 
 Aplikasi manajemen perpustakaan mandiri yang dikembangkan menggunakan Python dan Streamlit. Proyek ini mendigitalisasi proses peminjaman dan pengembalian buku dengan memanfaatkan teknologi Barcode Dinamis sebagai kunci verifikasi transaksi.
+
 📝 Deskripsi Aplikasi
 
 Aplikasi ini hadir sebagai solusi bagi perpustakaan skala kecil untuk mengelola inventaris secara akurat. Menggunakan sistem penyimpanan CSV 100% offline, menjamin keamanan data lokal tanpa memerlukan server atau koneksi internet.
