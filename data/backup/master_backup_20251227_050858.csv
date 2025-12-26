@@ -1,0 +1,201 @@
+id_buku,judul,pengarang,stok
+A0001,Laskar Pelangi,Andrea Hirata,9
+A0002,The Psychology of Money, Morgan Housel ,8
+A0003,DARK PSYCHOLOGY,Novita WD,6
+A0004,The Secret of Dark PSYCHOLOGY,David Miller,9
+A0005,Seni Mengambil Keputusan,John C. Maxwell,15
+A0006,The Power of Now,Eckhart Tolle,7
+A0007,The Little Prince (Pangeran Kecil),Antoine de Saint-Exupéry,21
+A0008,Why We Sleep,Matthew Walker,21
+A0009,7 Habits of Highly Effective People,Stephen Covey,24
+A0010,The Selfish Gene,Richard Dawkins,24
+A0011,Kitab Filsafat,Jostein Gaarder,7
+A0012,Seni Berperang,Sun Tzu,9
+A0013,Sebuah Seni untuk Bersikap Bodo Amat,Mark Manson,13
+A0014,Filosofi Teras,Henry Manampiring,13
+A0015,Seni Hidup Minimalis,Seni Hidup Minimalis,17
+A0016,Norwegian Wood,Haruki Murakami,21
+A0017,The Great Gatsby,F. Scott Fitzgerald,15
+A0018,Seni Negosiasi,Chris Voss,16
+A0019,The Secret History,Donna Tartt,18
+A0020,The Power of Habit,Charles Duhigg,21
+A0021,Deep Work,Cal Newport,19
+A0022,The Power of Broke,Daymond John,28
+A0023,Influence: The Psychology of Persuasion,Robert Cialdini,22
+A0024,The Communist Manifesto,Karl Marx & Friedrich Engels,29
+A0025,Revolusi dari Desa,Eko Prasetyo,30
+A0026,Indonesia dalam Arus Sejarah (Jilid 1),Marwati Djoened Poesponegoro,38
+A0027,Sejarah Peradaban Islam,Badri Yatim,22
+A0028,Dunia Sophie,Jostein Gaarder,29
+A0029,Metamorfosis,Franz Kafka,20
+A0030,Chronicle of a Death Foretold,Gabriel García Márquez,22
+A0031,The Theory of Relativity: Special and General,Albert Einstein,20
+A0032,A Gentleman in Moscow,Amor Towles,23
+A0033,Etika Nichomachean,Aristotle,28
+A0034,The World as Will and Representation,Arthur Schopenhauer,20
+A0035,A History of Western Philosophy,Bertrand Russell,22
+A0036,Bilangan Fu,Ayu Utami,27
+A0037,Sejarah Jawa,B.J. Schrieke,23
+A0038,Nusantara: Sejarah Indonesia,Bernard H.M. Vlekke,25
+A0039,Filsafat Ilmu Pengetahuan,B.F. Skinner,30
+A0040,The Elegant Universe,Brian Greene,22
+B0001,Best Score Tes Masuk TNI POLRI,ENHA PUNJABI,8
+B0002,Pendidikan Pancasila dan Kewarganegaraan,Ai Tin Sumarti,20
+B0003,Bumi Manusia,Pramoedya Ananta Toer,28
+B0004,Negeri 5 Menara,Ahmad Fuadi,16
+B0005,Hujan,Tere Liye,12
+B0006,Pulang,Leila S. Chudori,14
+B0007,Negeri di Ujung Tanduk,Tere Liye,15
+B0008,How to Win Friends and Influence People,Dale Carnegie,9
+B0009,Kimia Dasar Konsep-konsep Inti,Raymond Chang,14
+B0010,Di Bawah Bendera Revolusi,Soekarno,16
+B0011,Bidadari-Bidadari Surga,Tere Liye,18
+B0012,Kota Tua,Seno Gumira Ajidarma,20
+B0013,Ilmu Dasar Fotografi,Anggota Komunitas Fotografi,31
+B0014,Indonesia Poenja Tjerita,Various Authors,16
+B0015,Tirani Kata,St. Sunardi,19
+B0016,Jalan Sunyi Seorang Penulis,Seno Gumira Ajidarma,9
+B0017,Sejarah Tuhan,Karen Armstrong,29
+B0018,Sapiens: Sejarah Singkat Umat Manusia,Yuval Noah Harari,15
+B0019,Homo Deus: Masa Depan Umat Manusia,Yuval Noah Harari,17
+B0020,Biologi Edisi Kedelapan Jilid 1,Neil A. Campbell,16
+B0021,The Old Man and the Sea,Ernest Hemingway,24
+B0022,The Lord of the Rings: The Fellowship of the Ring,J.R.R. Tolkien,20
+B0023,The Hobbit,J.R.R. Tolkien,28
+B0024,A Game of Thrones,George R.R. Martin,22
+B0025,The Martian,Andy Weir,26
+B0026,Dune,Frank Herbert,21
+B0027,How to Read a Book,Mortimer J. Adler & Charles Van Doren,27
+B0028,Bahasa Tubuh (Body Language),Allan & Barbara Pease,22
+B0029,Psikologi Belajar,Muhibbin Syah,29
+B0030,Membaca Pikiran Orang Lewat Bahasa Tubuh,Joe Navarro,21
+B0031,The Stranger,Albert Camus,20
+B0032,The Myth of Sisyphus,Albert Camus,23
+B0033,The Fabric of the Cosmos,Brian Greene,22
+B0034,The Shadow of the Wind,Carlos Ruiz Zafón,23
+B0035,Permainan Malaikat,Carlos Ruiz Zafón,27
+B0036,Little Fires Everywhere,Celeste Ng,20
+B0037,Jane Eyre,Charlotte Brontë,28
+B0038,The Innovator's Dilemma,Clayton M. Christensen,29
+B0039,The Road,Cormac McCarthy,24
+B0040,Digital Fortress,Dan Brown,21
+C0001,Matahari,Tere Liye,21
+C0002,Rindu,Tere Liye,23
+C0003,Padang Bulan,Andrea Hirata,17
+C0004,Maryamah Karpov,Andrea Hirata,14
+C0005,Aroma Karsa,Dee Lestari,17
+C0006,Rectoverso,Dee Lestari,27
+C0007,Orang-Orang Biasa,Andrea Hirata,29
+C0008,Manusia Setengah Salmon,Raditya Dika,31
+C0009,Anna Karenina,Leo Tolstoy,35
+C0010,1984,George Orwell,25
+C0011,Killing Commendatore,Haruki Murakami,22
+C0012,Bumi dan Cinta,Habiburrahman El Shirazy,26
+C0013,The Kite Runner (Layang-Layang di Langit),Khaled Hosseini,19
+C0014,Negeri Senja,Seno Gumira Ajidarma,19
+C0015,Musashi,Eiji Yoshikawa,23
+C0016,Daun yang Jatuh Tak Pernah Membenci Angin,Tere Liye,26
+C0017,Ikigai: Rahasia Hidup Bahagia Ala Jepang,Héctor García & Francesc Miralles,29
+C0018,Grit: Kekuatan Passion dan Ketekunan,Angela Duckworth,21
+C0019,The 4-Hour Workweek,Timothy Ferriss,29
+C0020,Cosmos,Carl Sagan,33
+C0021,Atlas of the World,National Geographic,23
+C0022,Ensiklopedia Sains dan Teknologi,Tim Penulis,26
+C0023,Belajar Pemrograman Python,Abdul Kadir,22
+C0024,Deep Learning with Python,François Chollet,18
+C0025,The 6th Extinction: An Unnatural History,Elizabeth Kolbert,12
+C0026,Ekonomi Mikro,Mankiw,19
+C0027,Pengantar Hukum Indonesia,C.S.T. Kansil,25
+C0028,Filsafat Ilmu,Jujun S. Suriasumantri,27
+C0029,The History of the World in 100 Objects,Neil MacGregor,23
+C0030,Menjadi Pribadi yang Efektif,Covey,24
+C0031,The Da Vinci Code,Dan Brown,29
+C0032,Predictably Irrational,Dan Ariely,28
+C0033,Drive: The Surprising Truth About What Motivates Us,Daniel H. Pink,27
+C0034,Where the Crawdads Sing,Delia Owens,26
+C0035,Biografi Politik Mohammad Hatta,Deliar Noer,26
+C0036,Shutter Island,Dennis Lehane,25
+C0037,The Hitchhiker's Guide to the Galaxy,Douglas Adams,23
+C0038,The Power of Positive Self-Talk,Douglas Bloch,22
+C0039,Lelaki Harimau,Eka Kurniawan,21
+C0040,Semua Sudah Dimaafkan,Eka Kurniawan,20
+D0001,Bintang,Tere Liye,19
+D0002,Negeri Para Bedebah,Tere Liye,25
+D0003,Sapardi Djoko Damono: Hujan Bulan Juni,Sapardi Djoko Damono,28
+D0004,Kumpulan Cerpen: Perempuan yang Bersandar di Jendela,Seno Gumira Ajidarma,22
+D0005,Amba,Laksmi Pamuntjak,24
+D0006,Sang Pencerah,Akmal Nasery Basral,14
+D0007,Kitab Kawin,Ayu Utami,18
+D0008,Saman,Ayu Utami,13
+D0009,Atheis,Achdiat K. Mihardja,30
+D0010,Di Tepi Kali Bekasi,Pramoedya Ananta Toer,31
+D0011,Larasati,Pramoedya Ananta Toer,33
+D0012,Tenggelamnya Kapal Van Der Wijck,Hamka,32
+D0013,The Republic (Negara),Plato,21
+D0014,Thus Spoke Zarathustra,Friedrich Nietzsche,27
+D0015,A Brief History of Time,Stephen Hawking,29
+D0016,The Theory of Everything,Stephen Hawking,22
+D0017,Freakonomics,Steven D. Levitt & Stephen J. Dubner,28
+D0018,The Black Swan: The Impact of the Highly Improbable,Nassim Nicholas Taleb,27
+D0019,The 7 Habits of Highly Effective Teens,Sean Covey,16
+D0020,Deep Work,Cal Newport,19
+D0021,The Power of Positive Thinking,Norman Vincent Peale,17
+D0022,Dari Ave Maria ke Jalan Lain ke Roma,Idrus,27
+D0023,Para Priyayi,Umar Kayam,33
+D0024,The Midnight Library,Matt Haig,29
+D0025,The Power of Positive Self-Talk,Douglas Bloch,22
+D0026,Ekonomi Politik Global,Robert Gilpin,28
+D0027,Man's Search for Meaning,Viktor Frankl,21
+D0028,Siddhartha,Hermann Hesse,27
+D0029,Biografi Politik Mohammad Hatta,Deliar Noer,23
+D0030,Fisika Dasar Jilid 2,"Halliday, Resnick, Walker",20
+D0031,Orientalisme,Edward Said,30
+D0032,Rahasia Meede,E.S. Ito,29
+D0033,The Sixth Extinction,Elizabeth Kolbert,28
+D0034,Station Eleven,Emily St. John Mandel,27
+D0035,Wuthering Heights,Emily Brontë,26
+D0036,Lean Startup,Eric Ries,25
+D0037,The Night Circus,Erin Morgenstern,24
+D0038,Why We're Polarized,Ezra Klein,23
+D0039,Crime and Punishment,Fyodor Dostoevsky,22
+D0040,Beyond Good and Evil,Friedrich Nietzsche,21
+E0001,Kapital: Kritik Ekonomi Politik (Jilid I),Karl Marx,9
+E0002,"South of the Border, West of the Sun",Haruki Murakami,7
+E0003,Kafka on the Shore,Haruki Murakami,10
+E0004,To Kill a Mockingbird,Harper Lee,11
+E0005,Why Evolution Is True,Jerry A. Coyne,12
+E0006,Kebijakan Publik,Wahab,16
+E0007,The Secret History,Wahab,12
+E0008,As I Lay Dying,William Faulkner,14
+E0009,Lord of the Flies,William Golding,18
+E0010,Siddhartha,Hermann Hesse,13
+E0011,The Genealogy of Morality,Friedrich Nietzsche,21
+E0012,One Hundred Years of Solitude,Gabriel García Márquez,22
+E0013,Love in the Time of Cholera,Gabriel García Márquez,23
+E0014,Gone Girl,Gillian Flynn,24
+E0015,Madame Bovary,Gustave Flaubert,25
+E0016,Fisika Dasar Jilid 2,"Halliday, Resnick, Walker",26
+E0017,Factfulness,Hans Rosling,27
+E0018,Siddhartha,Hans Rosling,28
+E0019,Critique of Pure Reason,Immanuel Kant,29
+E0020,The Catcher in the Rye,J.D. Salinger,30
+E0021,The Double Helix,James D. Watson,30
+E0022,On the Road,James D. Watson,32
+E0023,Logika: Dasar-Dasar Berpikir,Jan Hendrik Rapar,19
+E0024,Being and Nothingness,Jean-Paul Sartre,20
+E0025,A Portrait of the Artist as a Young Man,James Joyce,21
+E0026,East of Eden,John Steinbeck,22
+E0027,The Grapes of Wrath,John Steinbeck,23
+E0028,"The General Theory of Employment, Interest and Money",John Maynard Keynes,24
+E0029,Good to Great,Jim Collins,24
+E0030,The Power of Myth,Joseph Campbell,25
+E0031,Antropologi Budaya,Koentjaraningrat,25
+E0032,Cat's Cradle,Kurt Vonnegut,25
+E0033,Slaughterhouse-Five,Kurt Vonnegut,23
+E0034,Tao Te Ching,Lao Tzu,27
+E0035,Big Little Lies,Liane Moriarty,27
+E0036,Pengakuan Pariyem,Linus Suryadi AG,30
+E0037,Circe,Madeline Miller,21
+E0038,The Song of Achilles,Madeline Miller,23
+E0039,The Handmaid's Tale,Madeline Margaret Atwood,26
+E0040,The Blind Assassin,Madeline Margaret Atwood,29
