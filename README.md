@@ -76,12 +76,12 @@ Aplikasi mendukung pengelolaan data buku secara terstruktur (Non-OOP):
 
 2. Barcode Dinamis (Code 128)
 
-    Generasi: Saat peminjaman, sistem membuat TRX-ID unik yang diubah menjadi gambar Barcode.
+    Generate: Saat peminjaman, sistem membuat TRX-ID unik yang diubah menjadi gambar Barcode.
 
     Verifikasi: Saat pengembalian, Barcode di-scan via webcam untuk memvalidasi transaksi di log.csv, mengubah status menjadi 'Kembali', dan menambah stok di master.csv.
 
 👥 Pembagian Tugas
 
-    [Seiji Lian Wibowo, Zahra Aulia Jinita, Nabila Meilani]: Pengembangan Logika Backend (utils.py),Integrasi Barcode, dan Pengolahan Data CSV.
+    [Seiji Lian Wibowo, Zahra Aulia Junta, Nabila Meaylani]: Pengembangan Logika Backend (utils.py),Integrasi Barcode, dan Pengolahan Data CSV.
 
-    [Seiji Lian Wibowo & Riska Nabila]: Pengembangan UI Streamlit (app.py), Visualisasi Dashboard, dan Penyusunan Dokumentasi.
+    [Seiji Lian Wibowo & Riska Nabila]: Pengembangan UI Streamlit (app.py), Visualisasi Dashboard, dan Penyusunan Dokumentasi serta Laporan.
