@@ -108,7 +108,7 @@ os.makedirs('qr', exist_ok=True)
 
 # --- IMPLEMENTASI LOGIN ---
 if not st.session_state['logged_in']:
-    st.sidebar.title("🔑 Login Pengguna")
+    st.sidebar.title(" Login Pengguna")
     st.sidebar.info("Username/Password: admin/12345 atau kasir/abcde") 
     
     with st.sidebar.form("Login Form"):
@@ -135,12 +135,12 @@ if st.sidebar.button("Keluar (Logout)"):
     st.rerun()
 
 # Navigasi Menu
-menu = st.sidebar.radio("Navigasi", ["Dashboard 🏠", "Manajemen Buku (CRUD) 📘", "Scanner Barcode 📲", "Log Peminjaman & Laporan 📈", "Pengaturan & Backup ⚙️"])
+menu = st.sidebar.radio("Navigasi", ["Dashboard ", "Manajemen Buku (CRUD) ", "Scanner Barcode ", "Log Peminjaman & Laporan ", "Pengaturan & Backup ", "Tentang"])
 
 
 # MENU 1: DASHBOARD
-if menu == "Dashboard 🏠":
-    st.title("🏠 Dasbor Ringkasan Perpustakaan")
+if menu == "Dashboard ":
+    st.title(" Dasbor Ringkasan Perpustakaan")
     
     total_buku, total_trx, dipinjam_saat_ini = ringkasan_data_dasbor()
     
@@ -166,8 +166,8 @@ if menu == "Dashboard 🏠":
 
 
 # MENU 2: CRUD
-elif menu == "Manajemen Buku (CRUD) 📘":
-    st.title("📘 Data Master Buku (CRUD)")
+elif menu == "Manajemen Buku (CRUD) ":
+    st.title(" Data Master Buku (CRUD)")
     
     is_admin = st.session_state['role'] == 'admin'
     
@@ -190,7 +190,7 @@ elif menu == "Manajemen Buku (CRUD) 📘":
                 pgr = st.text_input("Pengarang") 
                 stk = st.number_input("Jumlah Stok", min_value=1, value=1)
                 
-                if st.form_submit_button("💾 Simpan Data Baru"):
+                if st.form_submit_button(" Simpan Data Baru"):
                     if id_b and jdl:
                         sukses, pesan = tambah_buku(id_b, jdl, pgr, stk) 
                         if sukses:
@@ -198,7 +198,7 @@ elif menu == "Manajemen Buku (CRUD) 📘":
                             st.success(pesan)
                             st.image(barcode_path, caption=f"Barcode ID {id_b}", width=200)
                             st.markdown(
-                                get_image_download_link(barcode_path, f"Barcode_ID_{id_b}.png", "⬇️ Download Barcode ID Buku (Statis)"), 
+                                get_image_download_link(barcode_path, f"Barcode_ID_{id_b}.png", "⬇ Download Barcode ID Buku (Statis)"), 
                                 unsafe_allow_html=True
                             )
                             time.sleep(1)
@@ -222,7 +222,7 @@ elif menu == "Manajemen Buku (CRUD) 📘":
                     pgr_upd = st.text_input("Pengarang", value=buku_terpilih['pengarang']) 
                     stk_upd = st.number_input("Jumlah Stok", min_value=1, value=int(buku_terpilih['stok']))
                     
-                    if st.form_submit_button("🔄 Perbarui Data"):
+                    if st.form_submit_button(" Perbarui Data"):
                         sukses, pesan = update_data_buku(id_edit, jdl_upd, pgr_upd, stk_upd)
                         if sukses:
                             st.success(pesan)
@@ -247,7 +247,7 @@ elif menu == "Manajemen Buku (CRUD) 📘":
             st.subheader("Hapus Data Permanen")
             if not df_master.empty:
                 id_hapus = st.selectbox("Pilih ID untuk dihapus", df_master['id_buku'].tolist(), key='delete_key')
-                if st.button("🗑️ Hapus Permanen"):
+                if st.button(" Hapus Permanen"):
                     hapus_buku_permanen(id_hapus)
                     st.warning(f"ID {id_hapus} Dihapus Permanen!")
                     st.rerun()
@@ -256,8 +256,8 @@ elif menu == "Manajemen Buku (CRUD) 📘":
 
 
 # MENU 3: SCANNER BARCODE (Peminjaman & Pengembalian)
-elif menu == "Scanner Barcode 📲":
-    st.title("📲 Transaksi Peminjaman / Pengembalian Cepat")
+elif menu == "Scanner Barcode ":
+    st.title(" Transaksi Peminjaman / Pengembalian Cepat")
     
     mode = st.radio("Pilih Tipe Operasi", ('Peminjaman Satuan', 'Pengembalian Satuan (Scan)', 'Mode Batch (Cepat)'))
     st.markdown("---")
@@ -284,7 +284,7 @@ elif menu == "Scanner Barcode 📲":
                     st.info("Simpan Barcode ini untuk Pengembalian!")
                     st.image(barcode_path, caption=f"Barcode TRX-ID: {trx_id}", width=200)
                     st.markdown(
-                        get_image_download_link(barcode_path, f"Barcode_TRX_{trx_id}.png", "⬇️ Download Barcode TRX-ID"), 
+                        get_image_download_link(barcode_path, f"Barcode_TRX_{trx_id}.png", "⬇ Download Barcode TRX-ID"), 
                         unsafe_allow_html=True
                     )
                 else:
@@ -328,7 +328,7 @@ elif menu == "Scanner Barcode 📲":
         if batch_mode == 'Peminjaman Batch (ID Buku)':
             st.info("Masukkan ID Buku yang ingin dipinjam, dipisahkan dengan koma (cth: A001, B005, C002)")
             id_input = st.text_area("Daftar ID Buku", height=100)
-            if st.button("🚀 Proses Peminjaman Batch"):
+            if st.button(" Proses Peminjaman Batch"):
                 id_list = [i.strip().upper() for i in id_input.split(',') if i.strip()]
                 if id_list:
                     hasil = proses_peminjaman_batch(id_list)
@@ -347,7 +347,7 @@ elif menu == "Scanner Barcode 📲":
                                 if barcode_path:
                                     st.image(barcode_path, caption=f"Barcode TRX-ID: {trx_id}", width=150)
                                     st.markdown(
-                                        get_image_download_link(barcode_path, f"Barcode_TRX_{trx_id}.png", "⬇️ Download Barcode TRX-ID"), 
+                                        get_image_download_link(barcode_path, f"Barcode_TRX_{trx_id}.png", "⬇ Download Barcode TRX-ID"), 
                                         unsafe_allow_html=True
                                     )
                                 st.markdown("---") 
@@ -361,7 +361,7 @@ elif menu == "Scanner Barcode 📲":
         elif batch_mode == 'Pengembalian Batch (TRX-ID)':
             st.info("Masukkan TRX-ID yang ingin dikembalikan, dipisahkan dengan koma.")
             trx_input = st.text_area("Daftar TRX-ID", height=100)
-            if st.button("🔄 Proses Pengembalian Batch"):
+            if st.button(" Proses Pengembalian Batch"):
                 trx_list = [t.strip().upper() for t in trx_input.split(',') if t.strip()]
                 if trx_list:
                     hasil = proses_pengembalian_batch(trx_list)
@@ -374,8 +374,8 @@ elif menu == "Scanner Barcode 📲":
 
 
 # MENU 4: LOG PEMINJAMAN & LAPORAN
-elif menu == "Log Peminjaman & Laporan 📈":
-    st.title("📈 Riwayat Transaksi & Laporan")
+elif menu == "Log Peminjaman & Laporan ":
+    st.title(" Riwayat Transaksi & Laporan")
     
     st.subheader("Filter Laporan")
     col_stat, col_date_start, col_date_end = st.columns(3)
@@ -412,7 +412,7 @@ elif menu == "Log Peminjaman & Laporan 📈":
             
         # EXPORT KE EXCEL
         if not df_display.empty:
-            if st.button("⬇️ Export Data Filtered ke Excel"):
+            if st.button("⬇ Export Data Filtered ke Excel"):
                 filename = f"Laporan_Log_{start_date}_to_{end_date}"
                 excel_path = export_to_excel(df_display, filename)
                 
@@ -424,8 +424,8 @@ elif menu == "Log Peminjaman & Laporan 📈":
 
 
 # MENU 5: PENGATURAN & BACKUP
-elif menu == "Pengaturan & Backup ⚙️":
-    st.title("⚙️ Pengaturan Sistem & Data")
+elif menu == "Pengaturan & Backup ":
+    st.title(" Pengaturan Sistem & Data")
     
     if st.session_state['role'] == 'admin':
         st.subheader("Manajemen Backup Data")
@@ -441,7 +441,7 @@ elif menu == "Pengaturan & Backup ⚙️":
             col_zip.success(f"Folder dikompresi ke: {zip_filename}")
             
             col_zip.markdown(
-                get_binary_file_downloader_html(zip_filename, '⬇️ Download File ZIP (Data & QR)'),
+                get_binary_file_downloader_html(zip_filename, '⬇ Download File ZIP (Data & QR)'),
                 unsafe_allow_html=True
             )
     else:
@@ -450,3 +450,9 @@ elif menu == "Pengaturan & Backup ⚙️":
     st.subheader("Informasi Pengguna")
     st.info(f"Anda masuk sebagai: **{st.session_state['username'].upper()} ({st.session_state['role'].upper()})**")
     st.markdown("Aplikasi berjalan 100% secara lokal dan tidak memerlukan internet.")
+
+elif menu == "Tentang":
+    st.title("Tentang Aplikasi")
+    st.subheader("Sistem Perpustakaan Mini Berbasis Barcode (Streamlit)")
+
+    st.markdown("Aplikasi ini membantu pengelolaan perpustakaan sederhana secara **lokal** (tanpa internet) dengan dukungan **barcode** untuk mempercepat transaksi peminjaman dan pengembalian.")
