@@ -56,8 +56,8 @@ Plaintext
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 📸 Screenshot Aplikasi
-<img width="1919" height="983" alt="image" src="https://github.com/user-attachments/assets/926a18b3-1ea6-4437-8722-6a5ea7d5e80d" />
-<img width="1919" height="968" alt="Screenshot 2025-12-16 202634" src="https://github.com/user-attachments/assets/866abaf7-beac-41bc-9f77-a15446dd9080" />
+<img width="1919" height="912" alt="image" src="https://github.com/user-attachments/assets/d8fac37a-46ec-4b1e-859c-1c71dcc5e606" />
+<img width="1919" height="914" alt="image" src="https://github.com/user-attachments/assets/336c295c-52ef-4882-919e-e5569abb9a9a" />
 
 
 	
@@ -82,6 +82,6 @@ Aplikasi mendukung pengelolaan data buku secara terstruktur (Non-OOP):
 
 👥 Pembagian Tugas
 
-    [Seiji Lian Wibowo, Zahra Aulia Jinita, Nabila Meilani]: Pengembangan Logika Backend (utils.py),Integrasi Barcode, dan Pengolahan Data CSV.
+    [Seiji Lian Wibowo, Zahra Aulia Junita, Nabila Maylani putri]: Pengembangan Logika Backend (utils.py),Integrasi Barcode, dan Pengolahan Data CSV.
 
-    [Seiji Lian Wibowo & Riska Nabila]: Pengembangan UI Streamlit (app.py), Visualisasi Dashboard, dan Penyusunan Dokumentasi.
+    [Seiji Lian Wibowo & Riska Nabila]: Pengembangan UI Streamlit (app.py), Visualisasi Dashboard, dan Penyusunan Dokumentasi serta Laporan.
