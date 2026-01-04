@@ -82,6 +82,6 @@ Aplikasi mendukung pengelolaan data buku secara terstruktur (Non-OOP):
 
 👥 Pembagian Tugas
 
-    [Seiji Lian Wibowo, Zahra Aulia Junita, Nabila Maylani putri]: Pengembangan Logika Backend (utils.py),Integrasi Barcode, dan Pengolahan Data CSV.
+    [Zahra Aulia Junita, Nabila Maylani putri]: Pengembangan Logika Backend (utils.py),Integrasi Barcode, dan Pengolahan Data CSV.
 
     [Seiji Lian Wibowo & Riska Nabila]: Pengembangan UI Streamlit (app.py), Visualisasi Dashboard, dan Penyusunan Dokumentasi serta Laporan.
