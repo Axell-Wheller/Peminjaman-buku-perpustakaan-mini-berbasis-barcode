@@ -7,9 +7,13 @@ import base64
 import plotly.express as px 
 from datetime import datetime
 
-# --- WARNA AKSI COKELAT/TEMBAGA (#CD7F32) ---
-ACCENT_COLOR = "#CD7F32" 
-BACKGROUND_COLOR = "#1f1f1f" 
+# --- TEMA CERAH: BIRU LANGIT + ABU-ABU ---
+ACCENT_COLOR = "#2196F3"      # biru langit untuk aksen (garis, tombol, link)
+BACKGROUND_COLOR = "#E3F2FD"  # biru langit sangat muda (background utama)
+SIDEBAR_BG = "#F5F5F5"        # abu-abu muda untuk sidebar
+TEXT_DARK = "#263238"         # abu-abu gelap untuk teks
+CARD_BG = "#FFFFFF"        # background putih untuk kartu/form
+
 
 # --- INJEKSI CSS UNTUK TAMPILAN BARU ---
 st.set_page_config(
@@ -20,55 +24,163 @@ st.set_page_config(
 
 st.markdown(f"""
 <style>
-/* Streamlit global background override */
+
+/* ================== GLOBAL BACKGROUND ================== */
+
+/* Pastikan semua area utama pakai background biru muda */
+html, body, [data-testid="stAppViewContainer"] {{
+    background-color: {BACKGROUND_COLOR};
+}}
+
 .main {{
     background-color: {BACKGROUND_COLOR};
 }}
 
-/* 1. Warna latar belakang dan sidebar kembali ke gelap untuk kontras */
-[data-testid="stSidebar"] {{
-    background-color: #2e3b4e; /* Dark sidebar */
-    color: white; 
-    font-size: 16px;
+/* Hilangkan background header default biar nyatu */
+[data-testid="stHeader"] {{
+    background-color: rgba(0, 0, 0, 0);
 }}
-/* 2. Warna teks menu navigasi sidebar */
+
+/* ================== SIDEBAR ================== */
+
+[data-testid="stSidebar"] {{
+    background-color: {SIDEBAR_BG};      /* abu-abu muda */
+    color: {TEXT_DARK};
+    font-size: 16px;
+    border-right: 1px solid #E0E0E0;
+}}
+
 .stRadio > label > div {{
-    color: white; 
+    color: {TEXT_DARK};
     font-weight: 500;
 }}
-/* 3. Warna tombol utama (primary color) - Aksen Tembaga */
+
+/* ================== KONTEN / CARD ================== */
+
+.block-container {{
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}}
+
+/* Tombol utama (logout, submit, dll) */
 div.stButton > button:first-child {{
-    background-color: {ACCENT_COLOR}; 
-    color: black; /* Teks tombol hitam */
+    background-color: {ACCENT_COLOR};
+    color: #FFFFFF;
     border: none;
     border-radius: 8px;
     height: 3em;
-    font-weight: bold;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }}
+
 div.stButton > button:hover {{
-    background-color: #995c22; /* Darker Tembaga on hover */
+    background-color: #1976D2;   /* biru sedikit lebih gelap saat hover */
     border: none;
 }}
-/* 4. Mengubah tampilan judul/header - Aksen Tembaga */
+
+/* ================== JUDUL & TEKS ================== */
+
 h1 {{
-    color: {ACCENT_COLOR}; 
-    font-size: 2.5em;
-    border-bottom: 2px solid {ACCENT_COLOR};
-    padding-bottom: 5px;
-}}
-h2, h3, h4 {{
-    color: #f0f2f6; /* Warna teks header section yang terang */
+    color: #0D47A1;                             /* biru tua */
+    font-size: 2.4em;
+    border-bottom: 3px solid {ACCENT_COLOR};    /* garis biru langit */
+    padding-bottom: 6px;
+    margin-bottom: 1rem;
 }}
 
-/* 5. Mengubah warna link download */
+h2, h3, h4 {{
+    color: {TEXT_DARK};
+}}
+
+p, label, span {{
+    color: {TEXT_DARK};
+}}
+
+/* ================== LINK ================== */
+
 a {{
-    color: {ACCENT_COLOR} !important; 
+    color: {ACCENT_COLOR} !important;
     text-decoration: none;
 }}
+a:hover {{
+    text-decoration: underline;
+}}
 
-.stDeployButton {{ visibility: hidden; }}
+/* Sembunyikan tombol Deploy di kanan atas */
+.stDeployButton {{
+    visibility: hidden;
+}}
+
+/* Bungkus form (seperti di Tambah Buku) jadi kartu putih */
+div[data-testid="stForm"] {{
+    background-color: {CARD_BG};
+    border-radius: 12px;
+    padding: 1.5rem 1.8rem;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.12);
+}}
+
+/* Biar input, number input, dan text area tetap putih dan teks gelap */
+input, textarea {{
+    background-color: #FFFFFF !important;
+    color: {TEXT_DARK} !important;
+}}
+
+/* Beberapa komponen input Streamlit pakai baseweb */
+div[data-baseweb="input"] > input {{
+    background-color: #FFFFFF !important;
+    color: {TEXT_DARK} !important;
+}}
+
+div[data-baseweb="textarea"] > textarea {{
+    background-color: #FFFFFF !important;
+    color: {TEXT_DARK} !important;
+}}
+
+/* Label di atas field jangan terlalu pucat */
+label {{
+    color: {TEXT_DARK} !important;
+    font-weight: 500;
+}}
+
+/* ====== PERJELAS KOTAK INPUT (Login + form lain) ====== */
+
+/* Wrapper input (text / password / number) */
+div[data-baseweb="input"] {{
+    background-color: #FAFAFA !important;        /* abu-abu sangat muda */
+    border-radius: 8px;
+    border: 1px solid #CFD8DC;                   /* garis abu-abu */
+    padding: 0.25rem 0.75rem;
+}}
+
+/* Teks di dalam input */
+div[data-baseweb="input"] input {{
+    background-color: transparent !important;    /* biar ikut warna wrapper */
+    color: {TEXT_DARK} !important;               /* teks gelap */
+}}
+
+/* Text area (kalau ada) */
+div[data-baseweb="textarea"] {{
+    background-color: #FAFAFA !important;
+    border-radius: 8px;
+    border: 1px solid #CFD8DC;
+    padding: 0.25rem 0.75rem;
+}}
+
+div[data-baseweb="textarea"] textarea {{
+    background-color: transparent !important;
+    color: {TEXT_DARK} !important;
+}}
+
+/* Label di atas field */
+label {{
+    color: {TEXT_DARK} !important;
+    font-weight: 500;
+}}
+
+
 </style>
 """, unsafe_allow_html=True)
+
 
 
 # --- INISIALISASI SESSION STATE UNTUK LOGIN ---
@@ -201,7 +313,7 @@ elif menu == "Manajemen Buku (CRUD) ":
                                 get_image_download_link(barcode_path, f"Barcode_ID_{id_b}.png", "⬇ Download Barcode ID Buku (Statis)"), 
                                 unsafe_allow_html=True
                             )
-                            time.sleep(1)
+                            time.sleep(2)
                             st.rerun()
                         else:
                             st.error(pesan)
